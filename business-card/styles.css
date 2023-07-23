@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+body {
+    margin: 20px;
+    background-color: #E5E5E5;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.card {
+    animation-duration: 3s;
+    animation-name: main-card;
+    animation-delay: 2;
+    //animation-iteration-count: 2;
+    //animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    //animation-fill-mode: both;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #FFFFFF;
+    border-bottom: 1rem solid #141414;
+    border-radius: 5px;
+}
+
+
+.content{
+    color: #1F1F1F;
+    animation-duration: 4s;
+    animation-name: go;
+}
+
+@keyframes go {
+  0%   {color: red;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+@keyframes main-card{
+  0%   {top: -400px;}
+  50%  {top: 100px;}
+  100% {top:0px;}
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
